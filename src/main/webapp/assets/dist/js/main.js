@@ -46,7 +46,7 @@ $('[id^="btn-create"]').click(function(){
 
     $.ajax({
         type: 'POST',
-        url: 'http://localhost:8080/Servlet_war/createGames',
+        url: 'contextPath + '/createGames'',
         data: {
             action: '/createGames'
         }
@@ -57,6 +57,6 @@ $('[id^="btn-create"]').click(function(){
         $('#lbl_name').text(games.name);
         $('#lbl_imgGame').text(games.imgGame);
         $('#lbl_datePremiere').text(games.datePremiere);
-        $('#lbl_Category_idCategory').text(games.beanCategory.idCategory);
+        $('#lbl_Category_idCategory').text(games.Category_idCategory.idCategory);
     });
 });
